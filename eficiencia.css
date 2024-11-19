@@ -1,0 +1,74 @@
+* { 
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* Estilo para el título con la imagen de fondo */
+  .titulo-con-imagen {
+	background-image: url('icono.png');
+	background-repeat: no-repeat;
+	background-size: 150px; /* Tamaño de la imagen */
+	padding-left: 150px;  /* Ajuste el espacio a la derecha del texto */
+	background-position: left center;  /* Alinea la imagen a la izquierda */
+	line-height: 100px;  /* Asegura que el texto esté alineado verticalmente */
+  }
+
+  /* Estilo para el h1 */
+  h1 {
+	font-family: 'Times New Roman';
+	font-size: 250%;
+	text-align: center;
+	background-color: #185ab1;
+	color: white;
+	padding: 35px;
+  }
+
+  /* Estilo para el menú de navegación */
+  nav ul {
+    background-color: #919192;
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    nav li {
+    display: inline-flex;
+    }
+    
+    nav a {
+    font-family: Arial;
+    text-decoration-line: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    }
+    
+    nav li:hover {
+    background-color: #185ab1; /* Corregido el selector de hover */
+    }
+
+  h2{
+    font-family: 'Times New Roman';
+    font-size: 180%;
+    text-align: center;
+    background-color: #3488c3;
+    padding: 8px;
+    color: white;
+  }
+
+  .imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ajustable {
+    width: 500px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ajustable:hover {
+    transform: scale(1.1);
+}

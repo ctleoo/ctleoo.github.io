@@ -1,0 +1,186 @@
+/* Reset */
+* {
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* Estilo para el título con la imagen de fondo */
+  .titulo-con-imagen {
+	background-image: url('icono.png');
+	background-repeat: no-repeat;
+	background-size: 110px; /* Tamaño inicial de la imagen */
+	padding-left: 150px; /* Espacio a la izquierda para la imagen */
+	background-position: left center; /* Alinea la imagen a la izquierda */
+	line-height: 100px; /* Altura del contenedor */
+	white-space: nowrap; /* Evita que el texto se corte */
+	overflow: hidden; /* Oculta contenido desbordante */
+  }
+  
+  /* Estilo para el h1 */
+  h1 {
+	font-family: 'Times New Roman';
+	font-size: 250%;
+	text-align: center;
+	background-color: #185ab1;
+	color: white;
+	padding: 12px;
+  }
+  
+  /* Estilo para el menú de navegación */
+  nav ul {
+	background-color: #919192;
+	padding: 7px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  nav li {
+	display: inline-flex;
+  }
+  
+  nav a {
+	font-family: Arial;
+	text-decoration-line: none;
+	color: white;
+	padding: 10px;
+	width: 150px;
+  }
+  
+  nav li:hover {
+	background-color: #185ab1; /* Corregido el selector de hover */
+  }
+  
+  /* Estilo para el h2 */
+  h2 {
+	font-family: 'Times New Roman';
+	font-size: 200%;
+	background-color: #185ab1;
+	color: white;
+	text-align: center;
+  }
+  
+  /* Estilo para las imágenes */
+  .imagenes {
+	display: flex; /* Usamos Flexbox */
+	justify-content: center; /* Centra las imágenes horizontalmente */
+	align-items: center; /* Centra las imágenes verticalmente si es necesario */
+	gap: 5px; /* Espacio entre las imágenes */
+	flex-wrap: wrap; /* Permite que las imágenes se ajusten si son muchas */
+	margin: 20px 0; /* Espacio arriba y abajo del contenedor */
+  }
+  
+  img {
+	width: 20%;
+	height: auto;
+	object-fit: contain;
+  }
+  
+  .imagenes {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+  }
+  
+  .ajustable {
+	transition: transform 0.3s ease;
+  }
+  
+  .ajustable:hover {
+	transform: scale(1.1);
+  }
+  
+  .imagen1 {
+	width: 550px;
+	height: auto;
+  }
+  
+  .imagen2 {
+	width: 340px;
+	height: auto;
+  }
+  
+  .imagen3 {
+	width: 340px;
+	height: auto;
+  }
+  
+  .imagen4 {
+	width: 660px;
+	height: auto;
+  }
+  
+  .imagen5 {
+	width: 500px;
+	height: auto;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  /* Tablets (pantallas menores a 768px) */
+  @media (max-width: 768px) {
+	h1 {
+	  font-size: 200%;
+	  padding: 10px;
+	}
+  
+	.titulo-con-imagen {
+	  padding-left: 100px; /* Reduce el espacio para la imagen */
+	  background-size: 80px; /* Ajusta el tamaño de la imagen */
+	  line-height: 80px; /* Reduce la altura para que no se corte */
+	}
+  
+	nav ul {
+	  display: flex;
+	  flex-direction: column; /* Coloca los enlaces en una columna */
+	  align-items: center;
+	}
+  
+	nav a {
+	  width: auto; /* Ajusta el ancho automático */
+	  font-size: 1em;
+	  padding: 8px;
+	}
+  
+	.imagenes {
+	  gap: 10px; /* Reduce el espacio entre imágenes */
+	}
+  
+	img {
+	  width: 40%; /* Aumenta el tamaño relativo para tablets */
+	}
+  }
+  
+  /* Teléfonos móviles (pantallas menores a 480px) */
+  @media (max-width: 480px) {
+	h1 {
+	  font-size: 150%;
+	}
+  
+	.titulo-con-imagen {
+	  padding-left: 70px; /* Espacio más pequeño para la imagen */
+	  background-size: 60px; /* Imagen más pequeña */
+	  line-height: 70px; /* Altura ajustada para móviles */
+	  text-align: center; /* Centra el texto para una mejor legibilidad */
+	}
+  
+	nav ul {
+	  padding: 5px;
+	}
+  
+	nav a {
+	  font-size: 0.9em;
+	  padding: 6px;
+	}
+  
+	.imagenes {
+	  flex-direction: column; /* Cambia a disposición vertical */
+	  gap: 10px;
+	}
+  
+	img {
+	  width: 80%; /* Ajusta el tamaño de las imágenes */
+	  margin: 0 auto; /* Centra las imágenes */
+	}
+  }
+  
